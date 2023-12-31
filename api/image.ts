@@ -10,10 +10,10 @@ export default async (req: VercelRequest, res: VercelResponse) => {
   switch (__PREFIX) {
     case '~': {
       return axios
-        .get<ArrayBuffer>(`https://s.pximg.net/${__PATH}`, {
+        .get<ArrayBuffer>(`https://pixiv-proxy.36h.top/${__PATH}`, {
           responseType: 'arraybuffer',
           headers: {
-            referer: 'https://pixiv-proxy.36h.top/',
+            referer: 'https://www.pixiv.net/',
             'user-agent':
               'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:110.0) Gecko/20100101 Firefox/110.0',
           },
