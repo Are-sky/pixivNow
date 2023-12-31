@@ -13,7 +13,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         .get<ArrayBuffer>(`https://s.pximg.net/${__PATH}`, {
           responseType: 'arraybuffer',
           headers: {
-            referer: 'https://www.pixiv.net/',
+            referer: 'https://pixiv-proxy.36h.top/',
             'user-agent':
               'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:110.0) Gecko/20100101 Firefox/110.0',
           },
